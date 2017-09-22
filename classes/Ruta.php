@@ -24,4 +24,11 @@ class Ruta{
         $this->destino->latitud=$destino->latitud;
         $this->destino->nombre=$destino->nombre;
     }
+
+    public function getRuta($r){
+      if($r === "origen")
+          return $this->origen;
+        else 
+          return $this->destino;
+    }
 }

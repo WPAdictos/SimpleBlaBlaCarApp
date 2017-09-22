@@ -48,6 +48,6 @@ class Vehiculo implements IVehiculo{
     }
 
     public function  __toString(){
-      return "Vehiculo con matricula = $this->matricula Modelo = $this->modelo su titular se llama =  $titular->nombre con Origen = $this->ruta->origen->nombre y con Destino = $this->ruta->destino->nombre <br>";
+      return "Vehiculo con matricula = {$this->matricula} Modelo = {$this->modelo} su titular se llama =  {$this->titular->getNombre()} con Origen = {$this->ruta->getRuta('origen')->nombre} y con Destino = {$this->ruta->getRuta('destino')->nombre}  <br>";
     }
 }

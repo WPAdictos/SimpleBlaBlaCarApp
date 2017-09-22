@@ -41,4 +41,6 @@ $ruta->setRuta($ruta_origen, $ruta_destino);
 $coche->setRuta($ruta);
 
 echo "<pre>";
-var_dump($coche);
+//var_dump($coche);
+
+echo $coche;
